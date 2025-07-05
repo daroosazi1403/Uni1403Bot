@@ -11,15 +11,15 @@ bot = telebot.TeleBot(TOKEN)
 
 # لینک‌های Dropbox برای جزوه‌ها و تکالیف
 NOTES = {
-    'biology': 'YOUR_BIOLOGY_NOTES_LINK?dl=1',  # لینک Dropbox جزوه بیولوژی
+    'biology': 'https://www.dropbox.com/scl/fi/gcpod1f54fsx6qwnpt1yo/biology.pdf?rlkey=qft6pgyssda03tcpnuy74gkp2&st=4gnj19t2&dl=1',  # لینک Dropbox جزوه بیولوژی
     'math': 'https://www.dropbox.com/scl/fi/9jcttq9hcjokxbpib1xbx/.pdf?rlkey=psib9funf66abflj96dlwfoms&st=0nwyjwrw&dl=1',        # لینک Dropbox جزوه ریاضی
-    'literature': 'YOUR_LITERATURE_NOTES_LINK?dl=1'  # لینک Dropbox جزوه ادبیات
+    'literature': 'https://www.dropbox.com/scl/fi/gp8kwkptafixe5awadk2n/adabiat.pdf?rlkey=tdtptodnewvizx63cj9cdf6r4&st=hnqlwnb7&dl=1'  # لینک Dropbox جزوه ادبیات
 }
 
 ASSIGNMENTS = {
-    'biology': 'YOUR_BIOLOGY_ASSIGNMENTS_LINK?dl=1',  # لینک Dropbox تکالیف بیولوژی
-    'math': 'YOUR_MATH_ASSIGNMENTS_LINK?dl=1',        # لینک Dropbox تکالیف ریاضی
-    'literature': 'YOUR_LITERATURE_ASSIGNMENTS_LINK?dl=1'  # لینک Dropbox تکالیف ادبیات
+    'biology': 'https://www.dropbox.com/scl/fi/2pl7xrxlm2tlc5xpp2wjl/taklif.pdf?rlkey=my7qaflnv492kile63fsb8kxc&st=wq836qjm&dl=1',  # لینک Dropbox تکالیف بیولوژی
+    'math': 'https://www.dropbox.com/scl/fi/2pl7xrxlm2tlc5xpp2wjl/taklif.pdf?rlkey=my7qaflnv492kile63fsb8kxc&st=wq836qjm&dl=1',        # لینک Dropbox تکالیف ریاضی
+    'literature': 'https://www.dropbox.com/scl/fi/2pl7xrxlm2tlc5xpp2wjl/taklif.pdf?rlkey=my7qaflnv492kile63fsb8kxc&st=wq836qjm&dl=1'  # لینک Dropbox تکالیف ادبیات
 }
 
 # تابع دانلود فایل از Dropbox
