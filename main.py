@@ -50,7 +50,7 @@ def subjects_menu(category):
 # هندلر دستور /start
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-    bot.reply_to(message, "🎓 به ربات ورودی دانشگاه ۱۴۰۳ خوش آمدید!\nلطفاً گزینه موردنظر را انتخاب کنید:", reply_markup=main_menu())
+    bot.reply_to(message, "🎓 به ربات ورودی داروسازی بهمن ۱۴۰۳ خوش آمدید!\nلطفاً گزینه موردنظر را انتخاب کنید:", reply_markup=main_menu())
 
 # هندلر دستور /notes
 @bot.message_handler(commands=['notes'])
@@ -70,7 +70,7 @@ def callback_query(call):
     elif call.data == 'assignments':
         bot.edit_message_text("📝 لطفاً درس موردنظر را انتخاب کنید:", chat_id=call.message.chat.id, message_id=call.message.message_id, reply_markup=subjects_menu('assignments'))
     elif call.data == 'about':
-        bot.edit_message_text("ℹ️ این ربات برای ورودی‌های دانشگاه (بهمن ۱۴۰۳) طراحی شده و جزوه‌ها و تکالیف دروس را ارائه می‌دهد.", chat_id=call.message.chat.id, message_id=call.message.message_id, reply_markup=main_menu())
+        bot.edit_message_text("ℹ️ این ربات برای ورودی‌ داروسازی بهمن ۱۴۰۳ طراحی شده و جزوه‌ها و تکالیف دروس را ارائه می‌دهد.", chat_id=call.message.chat.id, message_id=call.message.message_id, reply_markup=main_menu())
     elif call.data.startswith('notes_') or call.data.startswith('assignments_'):
         subject = call.data.split('_')[1]
         is_notes = call.data.startswith('notes_')
