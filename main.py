@@ -102,3 +102,13 @@ bot.delete_webhook()
 
 # شروع ربات
 bot.polling()
+# مسیر وب‌هوک
+@app.route('/webhook', methods=['POST'])
+def webhook():
+    update = Update.de_json(request.get_json(), bot)
+    dispatcher.process_update(update)
+    return 'OK', 200
+
+if __name__ == '__main__':
+    # وب‌سرور رو روی پورت 8080 اجرا کن
+    app.run(host='0.0.0.0', port=8080)
